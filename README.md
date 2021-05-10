@@ -1,2 +1,2 @@
 # Algorithm
-Algorithm Practice
+Practice! Algorithm
