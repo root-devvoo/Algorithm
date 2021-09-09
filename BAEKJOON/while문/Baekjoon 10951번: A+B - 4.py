@@ -1,0 +1,7 @@
+# EOFError 해결하는 알고리즘
+while True:
+    try:
+        a, b = map(int, input().split())
+    except:
+        break
+    print(a+b)  
