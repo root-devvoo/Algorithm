@@ -20,3 +20,11 @@ def solution(n):
     return sum(map(int, n_lists))
 
 solution(12) # 출력값 : 28
+
+########################################################################################
+
+# 자연수 뒤집어 배열로 만들기 문제
+def solution(n):
+    return list(map(int, reversed(str(n))))
+
+solution(123457) # 출력 : [7, 5, 4, 3, 2, 1]
