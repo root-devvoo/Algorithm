@@ -36,3 +36,12 @@ def solution(s):
     return int(s)
 
 solution('-1234') # 출력 : -1234 (type: int)
+
+########################################################################################
+
+# 문자열 내림차순으로 배치하기 문제
+def solution(s):
+    return ''.join(sorted(s, reverse=True))
+    # 하나로 이어진 문자열로 만들기 위해서 ''.join을 사용한다
+    
+solution("Zbcdefg") # 출력 : 'gfedcbZ'    
