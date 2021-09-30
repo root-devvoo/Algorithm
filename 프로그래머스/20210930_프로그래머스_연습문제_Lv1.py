@@ -44,4 +44,29 @@ def solution(s):
     return ''.join(sorted(s, reverse=True))
     # 하나로 이어진 문자열로 만들기 위해서 ''.join을 사용한다
     
-solution("Zbcdefg") # 출력 : 'gfedcbZ'    
+solution("Zbcdefg") # 출력 : 'gfedcbZ'
+
+########################################################################################
+
+# 문자열 내 p와 y의 개수 문제
+def solution(s):
+    answer = True
+    p = 0
+    y = 0
+
+    for i in s:
+        # 대소문자 p 혹은 y가 있을 경우마다 개수를 하나씩 증가시킴
+        if (i == 'p' or i == "P"):
+            p += 1
+        elif (i == 'y' or i == 'Y'):
+            y += 1
+    # 그리고, p와 y의 개수가 같지않으면 False를 나타내도록 함
+    if (p != y):
+        answer = False
+
+    # bool 형의 변수를 리턴해준다    
+    return answer
+
+solution('pPoooyY') # 출력 : True (문자열 안에 p와 y의 개수가 같으므로!)
+
+########################################################################################
