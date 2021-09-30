@@ -19,4 +19,4 @@ def solution(n):
     # 그 리스트의 요소들을 int형으로 바꾸고 모두 더함        
     return sum(map(int, n_lists))
 
-solution(12)
+solution(12) # 출력값 : 28
