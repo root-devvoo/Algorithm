@@ -28,3 +28,11 @@ def solution(n):
     return list(map(int, reversed(str(n))))
 
 solution(123457) # 출력 : [7, 5, 4, 3, 2, 1]
+
+########################################################################################
+
+# 문자열을 정수로 바꾸기 문제
+def solution(s):
+    return int(s)
+
+solution('-1234') # 출력 : -1234 (type: int)
