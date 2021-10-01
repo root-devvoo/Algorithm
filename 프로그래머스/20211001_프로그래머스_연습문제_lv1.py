@@ -15,7 +15,9 @@ def solution(s):
     
     else :
         return False
+############ output ############    
+solution("a234") # False
+solution("1234") # True
 
-solution("a234")
+####################################################################################
 
-solution("1234")
