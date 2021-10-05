@@ -20,6 +20,6 @@ def solution(n):
                 a[j] = False
     
     return len(answer)
-
-print(solution(10))
-print(solution(5))
+#################### output ####################
+solution(10) # result : 4
+solution(5) # result : 3
