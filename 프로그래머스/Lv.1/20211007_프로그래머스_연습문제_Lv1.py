@@ -26,6 +26,7 @@ def solution(s, n):
     # (참고한 블로그 : https://wooaoe.tistory.com/72)
     # (아스키 코드 관련 참고 : https://namu.wiki/w/%EC%95%84%EC%8A%A4%ED%82%A4%20%EC%BD%94%EB%93%9C?from=%EC%95%84%EC%8A%A4%ED%82%A4%EC%BD%94%EB%93%9C)
 
-print(solution('AB', 1))
-print(solution('z', 1))
-print(solution('a B z', 4))
+#################### output TEST ####################     
+solution('AB', 1) # result : "BC"
+solution('z', 1) # result : "a"
+solution('a B z', 4) # result : "e F d"
