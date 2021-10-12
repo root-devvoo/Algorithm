@@ -3,13 +3,14 @@ import sys
 from collections import deque
 # deque는 스택과 큐의 기능을 모두 가진 객체로 출입구를 양쪽에 가지고 있다
 # 스택처럼 써도 되고, 큐처럼 써도 된다.
+# (참고한 사이트 :: https://dongdongfather.tistory.com/72)
 
 queue = deque()
 # list로 선언해서 pop(0)를 하게 되면,
 # 첫 번째 element를 pop 하고나서 나머지 element들의 인덱스를
 # 1칸씩 당기는 과정에서 O(n)의 계산량이 발생한다.
 # 따라서 deque를 이용한다.
-# 출처 :: https://www.acmicpc.net/board/view/47845
+# (참고한 사이트 :: https://www.acmicpc.net/board/view/47845)
 
 # 정수 x를 큐에 넣는 연산
 def push(x):
@@ -22,7 +23,8 @@ def pop():
         print(-1) 
     else:
         print(queue[0])
-        queue.popleft() # deque 쓸 경우 :: 왼쪽에서 값을 빼고 싶으면 popleft()를 사용한다.     
+        queue.popleft() # deque 쓸 경우 :: 왼쪽에서 값을 빼고 싶으면 popleft()를 사용한다.
+        # (참고한 사이트 :: https://dongdongfather.tistory.com/72)
 
 # 큐에 들어있는 정수의 개수를 출력한다
 def size():
