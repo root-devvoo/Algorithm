@@ -20,7 +20,3 @@ WHERE NAME IS NULL;
 SELECT ANIMAL_ID FROM ANIMAL_INS
 WHERE NAME IS NOT NULL;
 ------------------------------------------------------------------------
--- NULL 처리하기
-SELECT ANIMAL_TYPE, IF(NAME IS NULL, "No name", NAME), SEX_UPON_INTAKE
-FROM ANIMAL_INS;
-------------------------------------------------------------------------
