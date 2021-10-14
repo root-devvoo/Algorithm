@@ -24,13 +24,3 @@ WHERE NAME IS NOT NULL;
 SELECT ANIMAL_TYPE, IF(NAME IS NULL, "No name", NAME), SEX_UPON_INTAKE
 FROM ANIMAL_INS;
 ------------------------------------------------------------------------
--- 없어진 기록 찾기
-SELECT OUTS.ANIMAL_ID, OUTS.NAME
-FROM ANIMAL_INS INS RIGHT JOIN ANIMAL_OUTS OUTS
-/* 
-RIGHT OUTER JOIN은 오른쪽 테이블을 기준으로 
-JOIN 조건이 일치하는 값들과 일치하지 않는 값을 출력한다. 
-일치하는 값이 없다면 NULL을 리턴하여 채워준다.
-*/
-ON INS.ANIMAL_ID = OUTS.ANIMAL_ID 
-WHERE INS.ANIMAL_ID IS NULL;
