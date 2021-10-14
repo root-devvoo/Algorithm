@@ -1,0 +1,13 @@
+-- 상위 n개 레코드 (Level 1)
+SELECT NAME FROM ANIMAL_INS
+ORDER BY DATETIME
+LIMIT 1;
+-----------------------------------------------
+-- 최댓값 구하기 (Level 1)
+SELECT DATETIME FROM ANIMAL_INS
+ORDER BY DATETIME DESC
+LIMIT 1;
+---------------------------------------------------------------------------------
+-- 모든 레코드 조회하기 (Level 1)
+SELECT * FROM ANIMAL_INS
+ORDER BY ANIMAL_ID;
