@@ -29,11 +29,17 @@ ORDER BY ANIMAL_TYPE;
 -- 동명 동물 수 찾기
 SELECT NAME, COUNT(NAME) AS COUNT
 FROM ANIMAL_INS
-WHERE NAME IS NOT NULL -- NULL값이 아닌 것들만...
+WHERE NAME IS NOT NULL -- NULL값이 아닌 것들만
 GROUP BY NAME
 HAVING COUNT > 1 -- 두 번 이상 쓰인 이름과 해당 이름이 쓰인 횟수를 조회하는 것이므로
 ORDER BY NAME;
------------------------------------------------
+---------------------------------------------------------------------------------
 -- 모든 레코드 조회하기
 SELECT * FROM ANIMAL_INS
+ORDER BY ANIMAL_ID;
+---------------------------------------------------------------------------------
+-- 루시와 엘라 찾기
+SELECT ANIMAL_ID, NAME, SEX_UPON_INTAKE
+FROM ANIMAL_INS
+WHERE NAME IN ('Lucy', 'Ella', 'Pickle', 'Rogan', 'Sabrina', 'Mitty')
 ORDER BY ANIMAL_ID;
