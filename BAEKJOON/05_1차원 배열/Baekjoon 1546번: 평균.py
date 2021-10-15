@@ -1,8 +1,5 @@
 n = int(input())
-scores = []
-
-for score in map(int, input().split()):
-    scores.append(score)
+scores = list(map(int, input().split()))
 
 M = max(scores)    
 new_scores = []
