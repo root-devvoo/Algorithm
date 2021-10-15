@@ -2,7 +2,7 @@ import sys
 m, n = map(int, sys.stdin.readline().split())
 
 def isprime(m, n):
-# 에라토스테네스의 체
+    # 에라토스테네스의 체
     a = [False,False] + [True]*(n-1)
     primes = []
 
