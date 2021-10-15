@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1Nb6y5nwQAERscACdiTy7eoCKsCgCVsnK
 """
 
+# 시저 암호 문제
 def solution(s, n):
     s = list(s)
 
