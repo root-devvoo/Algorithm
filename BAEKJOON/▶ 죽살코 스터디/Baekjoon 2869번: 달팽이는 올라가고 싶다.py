@@ -1,4 +1,4 @@
-# 시간 초과 코드 1 (while문 써서) 
+# 시간 초과 코드 1 (이유 : while문 써서) 
 import sys
 
 A, B, V = map(int, sys.stdin.readline().split())
@@ -16,14 +16,14 @@ while snail < V:
     day += 1
 
 print(day)
-
-# 시간 초과 코드 2 (이유를 모르겠다... sys import 하느라?)
+########################################################
+# 시간 초과 코드 2 (이유를 모르겠다... 혹시 sys import 하느라?)
 import sys
 import math
 
 A, B, V = map(int, sys.stdin.readline().split())
 print(math.ceil((V-A) / (A-B)) + 1)
-
+########################################################
 # 맞은 코드
 import math
 
