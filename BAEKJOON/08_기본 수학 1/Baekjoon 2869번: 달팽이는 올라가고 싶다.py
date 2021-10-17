@@ -35,3 +35,12 @@ print(math.ceil((V-A) / (A-B)) + 1)
 # 정상에서 A만큼 먼저 빼주고, 뺏던 하루를 더해줌
 # 나눈 결과인 몫이 2.x, 3.x 와 같이 정수로 나누어 떨어지지 않는 경우가 있기 때문에
 # math.ceil(x) 함수로 올림 하여 소수도 하루로 치도록 함
+#############################################################################
+# 맞은 코드 2 (시간 초과 코드 2만 수정한 것)
+import sys
+import math
+
+input = sys.stdin.readline()
+
+A, B, V = map(int, input.split())
+print(math.ceil((V-A) / (A-B)) + 1)
