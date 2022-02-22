@@ -66,7 +66,7 @@ public class Main {
 		}
 	}
 	
-	private static Object top() {
+	private static int top() {
 		if (size == 0) {
 			return -1;
 		} else {
