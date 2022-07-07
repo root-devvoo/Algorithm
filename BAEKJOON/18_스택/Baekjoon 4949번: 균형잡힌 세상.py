@@ -17,7 +17,7 @@ while True:
                 stack.pop()
             # 스택에 조건에 맞는 괄호가 없는 경우
             else:
-                stack.append(']')
+                stack.append(c)
                 break
         elif c == ')':
             # 스택에 비어있지 않으면서 짝이 맞는 '(' 괄호가 있다면
@@ -25,7 +25,7 @@ while True:
                 stack.pop()
             # 스택에 조건에 맞는 괄호가 없는 경우  
             else:
-                stack.append(')')
+                stack.append(c)
                 break       
     # 최종 결과 판별
     if len(stack) == 0:
