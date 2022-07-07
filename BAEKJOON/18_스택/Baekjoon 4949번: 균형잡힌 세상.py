@@ -31,3 +31,4 @@ while True:
     if len(stack) == 0:
         print('yes')
     else:
+        print('no')
