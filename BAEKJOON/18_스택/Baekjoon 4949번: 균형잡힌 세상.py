@@ -27,7 +27,7 @@ while True:
             else:
                 stack.append(')')
                 break       
-    # 위 for문에서 break가 걸리지 않았다면
+    # 최종 결과 판별
     if len(stack) == 0:
         print('yes')
     else:
