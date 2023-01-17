@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
 def func_a(times):
-	hour = int(times[:2])
-	minute = int(times[3:])
-	return hour*60 + minute
+  hour = int(times[:2])
+  minute = int(times[3:])
+  return hour*60 + minute
 
 def solution(subway_times, current_time):
-	current_minute = func_a(current_time) # 빈칸
-	INF = 1000000000
-	answer = INF
-	for s in subway_times:
-		subway_minute = func_a(s) # 빈칸
-		if subway_minute >= current_minute: # 빈칸
-			answer = subway_minute - current_minute
-			break
-	if answer == INF:
-		return -1
-	return answer
+  current_minute = func_a(current_time) # 빈칸
+  INF = 1000000000
+  answer = INF
+  for s in subway_times:
+    subway_minute = func_a(s) # 빈칸
+    if subway_minute >= current_minute: # 빈칸
+      answer = subway_minute - current_minute
+      break
+  if answer == INF:
+    return -1
+  return answer
 
 ######################################################
 subway_times1 = ["05:31", "11:59", "13:30", "23:32"]
